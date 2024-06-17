@@ -1,0 +1,137 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+      
+      }
+  
+  
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .contact-info {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  main {
+    padding: 40px 0;
+  }
+  
+  .services {
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .services p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    display: flex; /* Enables flexbox */
+    min-height: 25%; /* Ensures body takes up viewport height */
+    margin: 0; /* Remove default margin for better positioning */
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+   nav {
+    /* Remove default list styling */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Allow horizontal layout for links */
+  }
+  
+   nav li {
+    /* Set some margin for separation */
+    margin-right: 20px;
+     /* Set display to inline-block for horizontal layout */
+  display: inline-block;
+  margin-right: 20px; /* Maintain some margin for separation */
+  }
+  
+   nav a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Match existing text color */
+  }
+
+  .services {
+    text-align: center; /* Center the elements horizontally */
+    margin: 40px 0; /* Add some margin above and below */
+  }
+  
+  .services div {
+    display: inline-block; /* Allow elements to sit side-by-side */
+    margin: 10px; /* Add margin for separation */
+    text-align: center; /* Center text below images */
+  }
+  
+  .services div img {
+    width: 200px; /* Set a width for the images */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .services div p {
+    margin-top: 5px; /* Add some space between image and text */
+  }
+  .services div:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
+  
