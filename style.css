@@ -133,5 +133,10 @@ body {
     transform: scale(1.1); /* Increase size on hover */
     transition: transform 0.3s ease-in-out; /* Smooth transition effect */
   }
+
+  .container img {
+    max-width: 100%; /* Ensure image scales down on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
   
   
