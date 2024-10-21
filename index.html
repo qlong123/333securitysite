@@ -3,205 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>333 Security</title>
-    <link rel="icon" href="favi.png" type="image/png"> <!-- Favicon added -->
+    <title>Site Update | 333 Security</title>
     <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
-            background-color: #f0f0f0;
-            text-align: center;
-            scroll-behavior: smooth; /* Smooth scrolling */
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        /* Hero Section */
-        .hero {
-            width: 100%;
-            height: 300px;
-            background-image: url('cam-left.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            margin-bottom: 0;
-        }
-
-        /* Navbar */
-        .navbar {
-            background-color: #333;
-            width: 100%;
-            position: sticky;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-            z-index: 999;
-        }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            transition: background 0.3s ease-in-out;
-        }
-        .navbar a:hover {
-            background-color: #575757;
-        }
-
-        /* Image Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            width: 80%;
-            max-width: 1200px;
-            margin: 25px auto;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #333;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
+        body, html {
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            transition: opacity 0.3s ease;
-        }
-        .modal img {
-            max-width: 90%;
-            max-height: 90%;
-            border: 4px solid white;
-        }
-
-        /* Responsive Modal for Small Screens */
-        @media (max-width: 768px) {
-            .modal img {
-                max-width: 80%;
-                max-height: 80%;
-            }
-        }
-
-        /* Full-screen Modal Styles */
-        .full-screen {
-            width: 100vw;
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.9);
+            background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
         }
-        
-        /* Modal Image Handling */
-        #modalImage {
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        .update-msg {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .hover-box {
+            width: 100px;
+            height: 100px;
+            background-color: #ff5733;
+            margin: 20px auto;
+            border-radius: 8px;
+            transition: transform 0.5s ease;
+        }
+        .hover-box:hover {
+            transform: rotate(360deg) scale(1.5);
+        }
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .contact-info span {
             display: block;
-            margin: 0 auto;
-            max-height: calc(100vh - 40px);
-            max-width: calc(100vw - 40px);
+            margin-bottom: 0.5rem;
         }
-
-        /* Mobile-friendly Navbar */
-        @media (max-width: 600px) {
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        .moving-background {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 123, 255, 0.2);
+            top: 30%;
+            left: 30%;
+            border-radius: 50%;
+            animation: moveBackground 8s infinite ease-in-out;
         }
-
+        @keyframes moveBackground {
+            0% {transform: translate(0, 0);}
+            50% {transform: translate(100px, 200px);}
+            100% {transform: translate(0, 0);}
+        }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero">
-        333 Security
+
+<div class="container">
+    <h1 class="update-msg">This site is being updated!</h1>
+    <div class="hover-box"></div>
+
+    <div class="contact-info">
+        <span><strong>333 Security</strong></span>
+        <span>Email: <a href="mailto:info@333security.co.uk">info@333security.co.uk</a></span>
+        <span>Phone: <a href="tel:+442080505566">020 8050 5566</a></span>
     </div>
+</div>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#about-us">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </div>
+<div class="moving-background"></div>
 
-    <!-- Image Grid Section -->
-    <h2>View Demo</h2>
-    <div class="grid">
-<a href="http://onlineservices2024.ddns.net:8080/mjpg/video.mjpg"><p>click here</p></a>
-            </div>
-
-    <!-- Modal for Full-Screen Image -->
-    <div class="modal" id="modal" onclick="closeModal(event)">
-        <img id="modalImage" src="" alt="Full Size Image">
-    </div>
-
-    <!-- About Us Section -->
-    <br><br><br>
-    <section id="about-us">
-      <h2>About Us</h2>
-      <p>Welcome to 333 Security, your trusted partner in safeguarding homes and businesses with reliable, professional CCTV solutions. We specialize in the installation and maintenance of high-quality security systems that give you peace of mind, knowing your property is protected.</p>
-      <p>Our team is committed to delivering top-tier service and tailored security setups designed to meet the unique needs of each client. Whether it's a home or a commercial property, we provide solutions that ensure comprehensive coverage and long-term reliability.</p>
-      <p>At 333 Security, we believe in quality, integrity, and lasting security. We're here to help you feel secure, knowing that your safety is in expert hands. Choose us for dependable security solutions that truly make a difference.</p>
-    </section>
-
-    <!-- Services Section -->
-    <br><br><br>
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>At 333 Security, we provide comprehensive CCTV solutions to protect what matters most. Our services include:</p>
-      <ul>
-        <li><strong>CCTV Installation:</strong> We specialize in the professional installation of high-quality CCTV cameras for both homes and businesses, ensuring full coverage and peace of mind.</li>
-        <li><strong>CCTV Maintenance:</strong> We offer ongoing maintenance services to keep your security systems in top working condition, ensuring reliability and long-term performance.</li>
-        <li><strong>Custom Security Solutions:</strong> Whether you need a system for a small home or a large commercial property, we design and tailor our security setups to meet your specific needs.</li>
-      </ul>
-      <p>With 333 Security, you're choosing a reliable partner dedicated to enhancing your safety with expert installation and ongoing support.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <br><br><br>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p><a href="mailto:info@333security.co.uk">info@333security.co.uk</a><br><a href="tel:02080505566">020 8050 5566</a></p>
-    </section>
-
-    <br><br><br>
-
-    <!-- JavaScript for Modal Handling -->
-    <script>
-        function openModal(src, index) {
-            var modal = document.getElementById('modal');
-            var modalImage = document.getElementById('modalImage');
-            modalImage.src = src;
-            modal.style.display = 'flex';
-        }
-
-        function closeModal(event) {
-            if (event.target.id === 'modal' || event.target.id === 'modalImage') {
-                document.getElementById('modal').style.display = 'none';
-            }
-        }
-    </script>
 </body>
 </html>
